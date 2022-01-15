@@ -18,8 +18,11 @@ public class Application {
 
     @RequestMapping("/test")
     public String test() {
-        return "test new API";
-    }
+        return "test new API";}
+
+    @RequestMapping("/test_new")
+    public String test_new() {
+        return "test new API - new content";}
 
     @RequestMapping("/name/{name}")
     public String getName(@PathVariable("name") String name) {
